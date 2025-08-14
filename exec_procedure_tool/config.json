@@ -1,0 +1,7 @@
+{
+    "procedures":[
+        {
+            "name": "historico.atualiza_tabelas_historicos_vendas_ativos"
+        }
+    ]
+}
