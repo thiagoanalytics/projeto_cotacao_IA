@@ -129,6 +129,13 @@ BEGIN
     CREATE INDEX IF NOT EXISTS idx_silver_enriched_asset_hora
       ON historico.hist_sales_enriched (symbol_cotacao_norm, data_hora_h);
 
+    --##########################################################
+    --### 4 Validações
+    --##########################################################
+
+    DELETE FROM historico.hist_sales_enriched
+    WHERE preco_unitario_usd IS NULL;
+
 END;
 $BODY$;
 ALTER PROCEDURE historico.atualiza_tabelas_historicos_vendas_ativos()
