@@ -2,6 +2,9 @@
     "procedures":[
         {
             "name": "historico.atualiza_tabelas_historicos_vendas_ativos"
+        },
+        {
+            "name": "public.atualiza_views_IA"
         }
     ]
 }
