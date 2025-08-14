@@ -1,0 +1,68 @@
+
+{
+  "bases": [
+        {
+        "csv_path": "C:/Users/KikoSynyster/Documents/Thiago/Projetos/Pipelines/projeto_cotacao_IA/bases/bronze_cotacoes.csv",
+        "schema": "stage",
+        "table": "stg_cotacoes",
+        "column_mapping": {
+            "preco": "preco",
+            "ativo": "ativo",
+            "moeda": "moeda",
+            "horario_coleta": "horario_coleta"
+            }
+        },
+        {
+        "csv_path": "C:/Users/KikoSynyster/Documents/Thiago/Projetos/Pipelines/projeto_cotacao_IA/bases/bronze_customers.csv",
+        "schema": "stage",
+        "table": "stg_customers",
+        "column_mapping": {
+            "customer_id": "customer_id",
+            "customer_name": "customer_name",
+            "documento": "documento",
+            "segmento": "segmento",
+            "pais": "pais",
+            "estado": "estado",
+            "cidade": "cidade",
+            "created_at": "created_at"
+            }
+        },
+        {
+        "csv_path": "C:/Users/KikoSynyster/Documents/Thiago/Projetos/Pipelines/projeto_cotacao_IA/bases/bronze_sales_btc_excel.csv",
+        "schema": "stage",
+        "table": "stg_sales_btc_excel",
+        "column_mapping": {
+            "transaction_id": "transaction_id",
+            "data_hora": "data_hora",
+            "ativo": "ativo",
+            "quantidade": "quantidade",
+            "tipo_operacao": "tipo_operacao",
+            "moeda": "moeda",
+            "cliente_id": "cliente_id",
+            "canal": "canal",
+            "mercado": "mercado",
+            "arquivo_origem": "arquivo_origem",
+            "importado_em": "importado_em"
+            }
+        },
+        {
+        "csv_path": "C:/Users/KikoSynyster/Documents/Thiago/Projetos/Pipelines/projeto_cotacao_IA/bases/bronze_sales_commodities_sql.csv",
+        "schema": "stage",
+        "table": "stg_sales_commodities_sql",
+        "column_mapping": {
+            "transaction_id": "transaction_id",
+            "data_hora": "data_hora",
+            "commodity_code": "commodity_code",
+            "quantidade": "quantidade",
+            "tipo_operacao": "tipo_operacao",
+            "unidade": "unidade",
+            "moeda": "moeda",
+            "cliente_id": "cliente_id",
+            "canal": "canal",
+            "mercado": "mercado",
+            "arquivo_origem": "arquivo_origem",
+            "importado_em": "importado_em"
+            }
+        }
+    ]
+}
